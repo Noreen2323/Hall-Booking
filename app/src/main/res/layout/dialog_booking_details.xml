@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Booking Details"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/adlam_display">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agbalumo"
+            android:text="Email: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRoom"
+            android:fontFamily="@font/agbalumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:fontFamily="@font/agbalumo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:fontFamily="@font/agbalumo"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReject"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/darkpurple"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnApprove"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Approve"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/purple"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    tools:context=".Activities.MainActivity"
+    android:background="@drawable/signupimg2">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/adlam_display"
+        android:includeFontPadding="false"
+        android:text="Continue As"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/arrow">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adminbtn"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            app:cornerRadius="10dp"
+            android:layout_marginStart="80dp"
+            android:text="ADMIN"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="15dp"
+            app:backgroundTint="#492E61">
+        </com.google.android.material.button.MaterialButton><com.google.android.material.button.MaterialButton
+        android:layout_width="130dp"
+        android:id="@+id/userbtn"
+        android:layout_height="70dp"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="USER"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        app:backgroundTint="#492E61">
+    </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+</LinearLayout>

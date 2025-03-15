@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signbgggg"
+    tools:context=".Activities.AvailableHalls">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elitte Halls"
+        android:textSize="40sp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:textColor="@color/darkpurple"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Available Rooms"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_room"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewRooms"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

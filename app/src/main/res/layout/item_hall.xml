@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHallName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hall Name"
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+                android:textColor="@color/darkpurple" />
+
+            <TextView
+                android:id="@+id/tvHallCapacity"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:layout_height="wrap_content"
+                android:text="Capacity: 200"
+                android:textSize="16sp"
+                android:textColor="@color/purple"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvHallVenue"
+                android:fontFamily="@font/adlam_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue: ABC Street"
+                android:textSize="16sp"
+                android:textColor="@color/purple"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvHallAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AC/Non-AC"
+                android:textSize="16sp"
+                android:fontFamily="@font/adlam_display"
+                android:textStyle="italic"
+                android:textColor="@color/Lbrown"
+                android:paddingTop="4dp" />
+
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            card_view:cornerRadius="10dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/Dbrown"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

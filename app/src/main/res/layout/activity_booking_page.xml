@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/signbgggg"
+    tools:context=".Activities.BookingPageActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ellite Halls"
+        android:textColor="@color/darkpurple"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Details"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:fontFamily="@font/agbalumo"
+        android:textColor="@color/darkpurple"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:fontFamily="@font/agbalumo"
+
+        android:layout_marginTop="50dp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agbalumo"
+        android:padding="8dp"
+        android:text="Time: "
+
+        android:textColor="@color/purple"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvRoomCapacity"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/agbalumo"
+        android:layout_height="wrap_content"
+        android:text="Capacity"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:fontFamily="@font/agbalumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room: "
+        android:textColor="@color/purple"
+
+        android:textSize="18sp"
+
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/etReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Reason"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:fontFamily="@font/agbalumo"
+        android:background="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:textSize="15sp"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/darkpurple"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"/>
+</LinearLayout>

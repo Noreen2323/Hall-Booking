@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signbgggg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.UserSignup">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#FFF2F4"
+        app:cardCornerRadius="30dp"
+        android:layout_centerInParent="true"
+        app:cardElevation="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="#8056A7"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="TO CONTINUE"
+                android:textColor="@color/purple"
+                android:textSize="10dp" />
+            <EditText
+                android:id="@+id/email"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:textColorHint="@color/purple"
+                android:background="@drawable/edit_btn"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter your Email ">
+
+            </EditText>  <EditText
+            android:id="@+id/password"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:textColorHint="@color/purple"
+            android:drawablePadding="5dp"
+            android:paddingStart="4dp"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_btn"
+            android:layout_height="40dp"
+            android:hint="Enter your password">
+
+        </EditText>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:text="LOGIN"
+                android:textSize="15dp"
+                android:fontFamily="@font/adlam_display"
+                android:layout_height="wrap_content"
+                app:cornerRadius="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple">
+
+            </com.google.android.material.button.MaterialButton> <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupbtn"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:text="Signup"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/adlam_display"
+            android:backgroundTint="@color/darkpurple">
+
+        </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

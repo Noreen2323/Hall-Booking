@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    app:cardCornerRadius="30dp"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add New Hall"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:fontFamily="@font/adlam_display">
+</TextView>
+        <EditText
+            android:id="@+id/etRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Name"
+            android:textColorHint="@color/purple"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etCapacity"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:textColorHint="@color/purple"
+            android:layout_height="wrap_content"
+            android:hint="Capacity"
+            android:inputType="number" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Room"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            app:cornerRadius="12dp"
+            android:backgroundTint="@color/darkpurple"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

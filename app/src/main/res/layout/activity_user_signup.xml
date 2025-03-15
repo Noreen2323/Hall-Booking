@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signbgggg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.UserSignup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/adlam_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="SIGNUP"
+            android:textColor="@color/purple"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TO CONTINUE"
+            android:textColor="@color/darkpurple"
+            android:textSize="10dp" />
+        <EditText
+            android:id="@+id/name"
+            android:drawableStart="@drawable/baseline_account_circle_24"
+            android:textColorHint="@color/purple"
+            android:drawablePadding="5dp"
+            android:paddingStart="4dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Name">
+
+        </EditText>  <EditText
+        android:id="@+id/email"
+        android:paddingStart="4dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:textColorHint="@color/purple"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edit_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email Address">
+
+    </EditText>  <EditText
+        android:id="@+id/password"
+        android:paddingStart="4dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:textColorHint="@color/purple"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+
+        android:hint="password">
+
+    </EditText>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/confirmpassword"
+            android:textColorHint="@color/purple"
+            android:paddingStart="4dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@drawable/edit_btn"
+            android:hint="confirm Password">
+
+        </EditText>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="SIGNUP"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:backgroundTint="#8156A8">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginbtn"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:fontFamily="@font/adlam_display"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/darkpurple">
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginBottom="130dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="If You Have Already Created An Account Click On LoginIn button ">
+
+    </TextView>
+</RelativeLayout>

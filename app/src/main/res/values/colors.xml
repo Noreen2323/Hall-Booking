@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tollbarcolor">#8156A8</color>
+
+    <color name="yellow">#b68442</color>
+    <color name="black2"> #171a1f</color>
+    <color name="Dbrown">  #583C3E</color>
+    <color name="Lbrown">#A9795C</color>
+    <color name="green">#BCF0BC</color>  <!-- Green -->
+    <color name="blue">#D8D8FB</color>   <!-- Blue -->
+    <!-- Red -->
+    <color name="myCustomGreen">#1B8E6B</color>
+    <color name="myCustomRed">#BD5651</color>
+    <color name="red">#F8B5B5</color>
+    <color name="purple">#8156A8</color>
+    <color name="pink">#F6BED1</color>
+    <color name="darkpurple">#492E61</color>
+
+
+</resources>
